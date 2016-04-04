@@ -10,9 +10,19 @@ It's assumed that you have `tesseract` and all desired languages installed. For 
 $ sudo apt-get install tesseract-ocr tesseract-ocr-jpn
 ```
 
-# Installation / Usage
+# Installation
 
 I didn't bother to put this in Hex since it's so simple. `lib/tesseract.ex` is really all there is.
+
+```
+$ curl https://raw.githubusercontent.com/bchase/tesseract-elixir/master/lib/tesseract.ex >> lib/tesseract.ex
+```
+
+# Usage
+
+We can scan the image text of `test/support/reibun.png` like so:
+
+![Image to be scanned: "例文　れいぶん　model sentence"](https://raw.githubusercontent.com/bchase/tesseract-elixir/master/test/support/reibun.png)
 
 ```
 Tesseract.scan! "test/support/reibun.png" # defaults to English
