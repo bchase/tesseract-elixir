@@ -20,11 +20,11 @@ $ curl https://raw.githubusercontent.com/bchase/tesseract-elixir/master/lib/tess
 
 # Usage
 
-We can scan the image text of `test/support/reibun.png` like so:
+We can scan the text from the image at `test/support/reibun.png` like so:
 
 ![Image to be scanned: "例文　れいぶん　model sentence"](https://raw.githubusercontent.com/bchase/tesseract-elixir/master/test/support/reibun.png)
 
-```
+```elixir
 Tesseract.scan! "test/support/reibun.png" # defaults to English
 # => "my: (ﬂLMSi/v) (n) model sentence: (P):\n\n"
 
